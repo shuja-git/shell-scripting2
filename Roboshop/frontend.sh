@@ -19,6 +19,6 @@
 #-----------------------------
 USER_UID=$(id -u)
 if [ "${USER_UID}" -ne 0 ]; then
-  echo "U should be root user to perform this task"
+  echo -e "\e[1;31mU should be root user to perform this task\e[0m"
   exit
 fi
