@@ -11,3 +11,10 @@ sample1(){
 
 sample
 sample1
+
+sample2(){
+  first argument =$1
+  Numbr of arguments = $#
+
+}
+sample2 123 abc
