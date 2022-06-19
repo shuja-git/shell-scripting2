@@ -24,7 +24,7 @@
 
 STAT_CHECK(){
 if [ $1 -ne 0 ]; then
-  echo ${2}
+  echo -e "\e[1;31m${2}\e0m"
   exit 1
 fi
 
