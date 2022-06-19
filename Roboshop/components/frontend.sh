@@ -32,7 +32,7 @@ fi
 
 yum install nginx -y
 STAT_CHECK $? "Nginx install failed"
-curl  -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zi"
+curl  -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
 STAT_CHECK $? "Download nginx failed"
 cd /usr/share/nginx/html
 rm -rf *
