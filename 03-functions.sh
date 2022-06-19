@@ -13,7 +13,7 @@ sample
 sample1
 
 sample2(){
-  first argument =$1
+  first argument = $1
   Numbr of arguments = $#
 
 }
