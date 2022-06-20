@@ -37,7 +37,7 @@ fi
 
 yum install nginx -y >>${LOG_FILE}
 STAT_CHECK $? "Nginx install"
-curl  -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
+curl  -f -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>${LOG_FILE}
 STAT_CHECK $? "Download nginx"
 cd /usr/share/nginx/html
 rm -rf *
